@@ -22,7 +22,8 @@ export default{
                 provider_name: provider,
                 recommendation_img: rec_img_url,
                 product_img: prod_img_url,
-                provider_img: prov_img_url
+                provider_img: prov_img_url,
+                description:""
             }
         }
     },
@@ -43,7 +44,7 @@ export default{
                 </div>
                 <p id="Recommedation"> Nuestra recomendacion de hoy es {{recommended.recommendation_name}}</p>
                 <hr>
-                <p id="RecommendationDescription"> {{description}} </p>
+                <p id="RecommendationDescription"> {{recommended.description}} </p>
                 <hr>
                 <p id="AsociateMarketing"> Este cocktail se hace con {{recommended.product_name}} {{recommended.provider_name}}</p>
                 <div id="ProductImages">
